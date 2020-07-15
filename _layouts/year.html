@@ -10,7 +10,7 @@ layout: default
       {% assign filtered_posts = site.posts | where: 'date', page.short_name %}
       {% for post in filtered_posts %}
         <li><span>
-          <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
+          <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }} <span class="post-date">- {{ post.date | date_to_string }}</span></a>
         </span></li>
       {% else %}
         <li>nothing here</li>
