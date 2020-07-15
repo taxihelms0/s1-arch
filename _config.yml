@@ -28,4 +28,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-baseurl: /s1-arch
+baseurl: 
