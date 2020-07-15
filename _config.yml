@@ -27,10 +27,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-relative-links
-
-relative_links:
-  enabled:     true
-  collections: true
 
 baseurl: /s1-arch
