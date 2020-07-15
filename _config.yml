@@ -33,4 +33,4 @@ relative_links:
   enabled:     true
   collections: true
 
-# baseurl: /s1-arch
+baseurl: /s1-arch
