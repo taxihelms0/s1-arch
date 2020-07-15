@@ -16,14 +16,14 @@ layout: default
   <div class="page-navigation">
     {% if page.previous.url %}
     <div class="leftNav">
-      <a class="prev" href="{{page.previous.url | prepend:site.baseurl}}"><i class="fa fa-long-arrow-left"></i></a>
-      <a class="prev" href="{{page.previous.url | prepend:site.baseurl}}">{{page.previous.title | truncatewords: 5, "..."}}</a>
+      <a class="prev" href="{{page.previous.url | prepend:site.baseurl }}"><i class="fa fa-long-arrow-left"></i></a>
+      <a class="prev" href="{{page.previous.url | prepend:site.baseurl }}">{{page.previous.title | truncatewords: 5, "..."}}</a>
     </div>
     {% endif %}
     {% if page.next.url %}
     <div class="rightNav">
-      <a class="next" href="{{page.next.url | prepend:site.baseurl}}">{{page.next.title | truncatewords: 5, "..."}}</i></a>
-      <a class="next" href="{{page.next.url | prepend:site.baseurl}}"><i class="fa fa-long-arrow-right"></i></a>
+      <a class="next" href="{{page.next.url | prepend:site.baseurl }}">{{page.next.title | truncatewords: 5, "..."}}</i></a>
+      <a class="next" href="{{page.next.url | prepend:site.baseurl }}"><i class="fa fa-long-arrow-right"></i></a>
     </div>
       {% endif %}
   </div>
