@@ -12,9 +12,9 @@
 
   <nav class="navbar">
     <ul>
-      <li><a href="/">{{ site.title }}</a></li>
+      <li><a href="{{ site.baseurl | append: '/' }}">{{ site.title }}</a></li>
     {% for item in site.data.navigation %}
-      <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}{%if item.link contains "://" %}target="new"{% endif %}>
+      <li><a {%if item.link contains "://" %} href="{{ item.link }}" target="new"{% else %}href="{{ item.link | prepend:site.baseurl }}"{% endif %}{% if page.url contains item.link %} class="current"{% endif %}>
         {{ item.name }}
       </a></li>
     {% endfor %}

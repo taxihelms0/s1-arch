@@ -2,7 +2,7 @@
   <ul>
     {% for item in site.years %}
     <li>
-      <a href="{{ item.url }}" {% if page.url contains item.short_name %}class="current"{% endif %}>{{ item.short_name }}</a>
+      <a href="{{ item.url | prepend:site.baseurl }}" {% if page.url contains item.short_name %}class="current"{% endif %}>{{ item.short_name }}</a>
     </li>
     {% endfor %}
   </ul>
